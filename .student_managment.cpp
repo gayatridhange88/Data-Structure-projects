@@ -1,29 +1,34 @@
 #include <iostream>
 using namespace std;
 
-struct Student {
+struct Student
+{
     int rollNo;
     float marks;
 };
 
-int main() {
+int main()
+{
     Student students[100];
     int count = 0;
     int choice;
 
-    do {
+    do
+    {
         cout << "\n===== STUDENT MANAGEMENT SYSTEM =====" << endl;
         cout << "1. Add Student" << endl;
         cout << "2. Display All Students" << endl;
         cout << "3. Search Student by Roll No" << endl;
         cout << "4. Exit" << endl;
+
         cout << "Enter your choice: ";
         cin >> choice;
 
-        switch (choice) {
-
+        switch(choice)
+        {
             case 1:
-                if (count < 100) {
+                if(count < 100)
+                {
                     cout << "Enter Roll No: ";
                     cin >> students[count].rollNo;
 
@@ -33,111 +38,59 @@ int main() {
                     count++;
 
                     cout << "Student record added successfully!" << endl;
-                } else {
+                }
+                else
+                {
                     cout << "Student limit reached!" << endl;
                 }
                 break;
 
             case 2:
-                if (count == 0) {
+                if(count == 0)
+                {
                     cout << "No student records found." << endl;
-                } else {
+                }
+                else
+                {
                     cout << "\nRoll No\tMarks" << endl;
                     cout << "----------------" << endl;
 
-                    for (int i = 0; i < count; i++) {
+                    for(int i = 0; i < count; i++)
+                    {
                         cout << students[i].rollNo << "\t"
                              << students[i].marks << endl;
                     }
                 }
                 break;
 
-            case 3: {#include<iostream>
-using namespace std;
-
-int main()
-{
-int marks[5],temp;
-
-cout<<"Enter marks of 5 students:"<<endl;
-for(int i = 0; i < 5; i++)
-{
-cin>>marks[i];
-}
-for (int i = 0; i < 5; i++)
-{
-for(int j = i + 1; j < 5; j++)
-{
-if(marks[i] > marks[j])
-{
-temp = marks[i];
-
-marks[i] = marks[j];
-marks[j] = temp;
-}
-}
-}
-cout<<"Marks in descending order:";
-for(int i = 0; i < 5 ; i++)
-{
-cout<<marks[i]<<" ";
-}
-cout<<"\n lowest marks="<<marks[0]<<endl;
-cout<<"Highest marks="<<marks[4]<<endl;
-return 0;
-}
+            case 3:
+            {
                 int roll;
                 bool found = false;
 
-                cout <<#include<iostream>
-using namespace std;
-
-int main()
-{
-int marks[5],temp;
-
-cout<<"Enter marks of 5 students:"<<endl;
-for(int i = 0; i < 5; i++)
-{
-cin>>marks[i];
-}
-for (int i = 0; i < 5; i++)
-{
-for(int j = i + 1; j < 5; j++)
-{
-if(marks[i] > marks[j])
-{
-temp = marks[i];
-
-marks[i] = marks[j];
-marks[j] = temp;
-}
-}
-}
-cout<<"Marks in descending order:";
-for(int i = 0; i < 5 ; i++)
-{
-cout<<marks[i]<<" ";
-}
-cout<<"\n lowest marks="<<marks[0]<<endl;
-cout<<"Highest marks="<<marks[4]<<endl;
-return 0;
-} "Enter Roll No to search: ";
+                cout << "Enter Roll No to search: ";
                 cin >> roll;
 
-                for (int i = 0; i < count; i++) {
-                    if (students[i].rollNo == roll) {
+                for(int i = 0; i < count; i++)
+                {
+                    if(students[i].rollNo == roll)
+                    {
                         cout << "Student Found!" << endl;
-                        cout << "Roll No: " << students[i].rollNo << endl;
-                        cout << "Marks: " << students[i].marks << endl;
+                        cout << "Roll No: "
+                             << students[i].rollNo << endl;
+                        cout << "Marks: "
+                             << students[i].marks << endl;
+
                         found = true;
                         break;
                     }
                 }
 
-                if (!found) {
+                if(found == false)
+                {
                     cout << "Student record not found." << endl;
                 }
+
                 break;
             }
 
@@ -146,10 +99,11 @@ return 0;
                 break;
 
             default:
-                cout << "Invalid choice! Please try again." << endl;
+                cout << "Invalid choice!" << endl;
         }
 
-    } while (choice != 4);
+    } while(choice != 4);
 
     return 0;
 }
+
