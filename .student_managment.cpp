@@ -1,15 +1,11 @@
 #include <iostream>
 using namespace std;
 
-struct Student
-{
-    int rollNo;
-    float marks;
-};
-
 int main()
 {
-    Student students[100];
+    int rollNo[100];
+    float marks[100];
+
     int count = 0;
     int choice;
 
@@ -30,10 +26,10 @@ int main()
                 if(count < 100)
                 {
                     cout << "Enter Roll No: ";
-                    cin >> students[count].rollNo;
+                    cin >> rollNo[count];
 
                     cout << "Enter Marks: ";
-                    cin >> students[count].marks;
+                    cin >> marks[count];
 
                     count++;
 
@@ -57,8 +53,8 @@ int main()
 
                     for(int i = 0; i < count; i++)
                     {
-                        cout << students[i].rollNo << "\t"
-                             << students[i].marks << endl;
+                        cout << rollNo[i] << "\t"
+                             << marks[i] << endl;
                     }
                 }
                 break;
@@ -73,13 +69,11 @@ int main()
 
                 for(int i = 0; i < count; i++)
                 {
-                    if(students[i].rollNo == roll)
+                    if(rollNo[i] == roll)
                     {
                         cout << "Student Found!" << endl;
-                        cout << "Roll No: "
-                             << students[i].rollNo << endl;
-                        cout << "Marks: "
-                             << students[i].marks << endl;
+                        cout << "Roll No: " << rollNo[i] << endl;
+                        cout << "Marks: " << marks[i] << endl;
 
                         found = true;
                         break;
@@ -106,4 +100,3 @@ int main()
 
     return 0;
 }
-
