@@ -10,7 +10,8 @@ int main()
     // Enter roll numbers
     cout << "Enter roll numbers of 5 students:" << endl;
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+        {
         cin >> rollNo[i];
     }
 
@@ -19,17 +20,21 @@ int main()
     cin >> searchRoll;
 
     // Search for the roll number
-    for (int i = 0; i < 5; i++) {
-        if (rollNo[i] == searchRoll) {
+    for (int i = 0; i < 5; i++)
+        {
+        if (rollNo[i] == searchRoll) 
+        {
             found = true;
             break;
         }
     }
 
     // Display result
-    if (found) {
+    if (found)
+    {
         cout << "Student found";
-    } else {
+    } else 
+    {
         cout << "No roll no. absent";
     }
 
