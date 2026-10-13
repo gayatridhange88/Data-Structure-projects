@@ -8,12 +8,14 @@ int main()
     cin>>n;
     int rollNo[n];
     cout<<"Enter the the rollNo:\n";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         cin >> rollNo[i];
     }
 
     cout << "\nStored roll numbers are:\n";
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         cout << rollNo[i] << " ";
     }
 
