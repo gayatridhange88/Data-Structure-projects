@@ -6,14 +6,18 @@ int main() {
 
     // Input marks
     cout << "Enter marks of 5 students:" << endl;
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) 
+    {
         cin >> marks[i];
     }
 
     // Arrange marks in descending order
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4 - i; j++) {
-            if (marks[j] < marks[j + 1]) {
+    for (int i = 0; i < 4; i++)
+        {
+        for (int j = 0; j < 4 - i; j++) 
+        {
+            if (marks[j] < marks[j + 1])
+            {
                 int temp = marks[j];
                 marks[j] = marks[j + 1];
                 marks[j + 1] = temp;
@@ -23,7 +27,8 @@ int main() {
 
     // Display marks
     cout << "\nMarks in descending order: ";
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+        {
         cout << marks[i] << " ";
     }
 
@@ -74,14 +79,18 @@ int main() {
 
     // Input marks
     cout << "Enter marks of 5 students:" << endl;
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+        {
         cin >> marks[i];
     }
 
     // Arrange marks in descending order
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4 - i; j++) {
-            if (marks[j] < marks[j + 1]) {
+    for (int i = 0; i < 4; i++) 
+    {
+        for (int j = 0; j < 4 - i; j++)
+            {
+            if (marks[j] < marks[j + 1]) 
+            {
                 int temp = marks[j]#include<iostream>
 using namespace std;
 
@@ -124,7 +133,8 @@ return 0;
 
     // Display marks
     cout << "\nMarks in descending order: ";
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+        {
         cout << marks[i] << " ";
     }
 
@@ -142,14 +152,18 @@ int main() {
 
     // Input marks
     cout << "Enter marks of 5 students:" << endl;
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) 
+    {
         cin >> marks[i];
     }
 
     // Arrange marks in descending order
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 4 - i; j++) {
-            if (marks[j] < marks[j + 1]) {
+    for (int i = 0; i < 4; i++)
+        {
+        for (int j = 0; j < 4 - i; j++) 
+        {
+            if (marks[j] < marks[j + 1]) 
+            {
                 int temp = marks[j];
                 marks[j] = marks[j + 1];
                 marks[j + 1] = temp;
@@ -159,7 +173,8 @@ int main() {
 
     // Display marks
     cout << "\nMarks in descending order: ";
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) 
+    {
         cout << marks[i] << " ";
     }
 
